@@ -1,0 +1,82 @@
+/* Default styles for larger screens */
+.homeContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.roomBoxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.roomBox {
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #f3f2f2;
+  text-align: center;
+  transition: transform 0.2s;
+  border-radius: 20px;
+  background-color:#e7e5e5 ;
+}
+
+.roomBox h3 {
+  font-size: 1.7em;
+  color: #003580 ;
+}
+
+.roomBox p {
+  font-size: 1.3rem;
+}
+
+.roomBox:hover {
+  transform: scale(1.05);
+}
+
+/* Default status style (can be overridden) */
+.status {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Green text for available rooms */
+.status.available {
+  color: green;
+}
+
+/* Red text for booked rooms */
+.status.booked {
+  color: red;
+}
+
+/* Media query for screens smaller than 992px (e.g., tablets) */
+@media (max-width: 992px) {
+  .roomBox {
+    width: 45%;
+  }
+}
+
+/* Media query for screens smaller than 768px (e.g., landscape mobile phones) */
+@media (max-width: 768px) {
+  .roomBox {
+    width: 48%;
+  }
+}
+
+/* Media query for screens smaller than 576px (e.g., portrait mobile phones) */
+@media (max-width: 576px) {
+  .roomBox {
+    width: 100%;
+  }
+
+  .roomBox h3 {
+    font-size: 1.2rem;
+  }
+
+  .roomBox p {
+    font-size: 0.9rem;
+  }
+}
+

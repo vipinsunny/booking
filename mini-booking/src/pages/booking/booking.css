@@ -1,0 +1,137 @@
+/* booking.css */
+
+/* Base styles for the booking container */
+.bookingContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.bookingTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling for the "Your Bookings" section */
+.userBookings {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userBookings h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the list of bookings */
+.userBookings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.userBookings ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styles for Edit, Delete, and Save */
+.edit-button,
+.delete-button,
+.save-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.edit-button {
+  background-color: #003580;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: red;
+  color: #fff;
+}
+
+.save-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Styling for the edited time slot select input */
+.userBookings ul li select {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+/* Media query for screens smaller than 768px (e.g., landscape mobile phones) */
+@media (max-width: 768px) {
+  .bookingForm label,
+  .bookingForm select {
+    display: block; /* Stack labels and selects */
+    width: 100%; /* Full width */
+  }
+
+.bookingContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+  .userBookings li {
+    padding: 10px;
+  }
+}
+
+/* Media query for screens smaller than 576px (e.g., portrait mobile phones) */
+@media (max-width: 576px) {
+  .bookingTitle,
+  .userBookings h2 {
+    font-size: 1.5rem; /* Adjust font size for headings */
+  }
+}

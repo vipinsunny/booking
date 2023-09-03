@@ -1,0 +1,8 @@
+[
+  { "id": 1, "room": "Room Sunshine", "status": "Available" },
+  { "id": 2, "room": "Room Avatar", "status": "Available" },
+  { "id": 3, "room": "Room New Castle", "status": "Available" },
+    { "id": 4, "room": "Room Park Avenue", "status": "Available" },
+      { "id": 5, "room": "Room Mermaid", "status": "Booked" }
+
+]
